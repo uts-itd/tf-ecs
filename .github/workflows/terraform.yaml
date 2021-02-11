@@ -27,4 +27,5 @@ name: Format and validate and plan
   push:
     branches:
       - master
+      - CZ-1013
   pull_request:
