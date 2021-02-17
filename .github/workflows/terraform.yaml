@@ -17,9 +17,9 @@ jobs:
         run: pwd
       - name: ls
         run: ls
-      # - name: Terraform Format
-      #   id: fmt
-      #   run: terraform fmt -check -recursive
+      - name: Terraform Format
+        id: fmt
+        run: terraform fmt -check -recursive
       # - name: terraform init
       #   id: init
       #   run: terraform init
