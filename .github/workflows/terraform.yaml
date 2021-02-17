@@ -21,14 +21,14 @@ jobs:
         id: fmt
         run: terraform fmt -check -diff
         continue-on-error: true
-      # - name: terraform init
-      #   id: init
-      #   run: terraform init
-      # - run: terraform validate
-      # - name: Terraform Plan
-      #   id: plan
-      #   if: github.event_name == 'pull_request'
-      #   run: terraform plan -no-color
+
+      - name: terraform init
+        id: init
+        run: terraform init
+      
+      - name: Terraform Plan
+        id: plan
+        run: terraform plan -no-color
 name: Format and validate and plan
 "on":
   push:
