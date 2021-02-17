@@ -5,9 +5,9 @@ jobs:
       AWS_DEFAULT_REGION: ap-southeast-2
       AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY }}"
       AWS_LOAD_CONFIG: 1
-    runs-on: self-hosted
+    runs-on: [ self-hosted ]
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: hashicorp/setup-terraform@v1
         with:
           terraform_version: 0.12.25
