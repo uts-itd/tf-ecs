@@ -7,7 +7,7 @@ variable "create_ecs" {
 variable "cluster_name" {
   description = "name of cluster"
   type        = string
-  name = "github-testing"
+  default     = "github-testing"
 }
 
 variable "capacity_providers" {
@@ -36,8 +36,8 @@ variable "container_insights" {
 
 // ecs task_definition variables
 
-variable "family"{
-  type = string
+variable "family" {
+  type        = string
   description = ""
-  name = "github-testing-family"
+  default     = "github-testing-family"
 }
