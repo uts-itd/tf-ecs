@@ -1,12 +1,13 @@
 variable "create_ecs" {
   description = "Do you want to create ecs cluster?"
-  default     = false
+  default     = true
   type        = bool
 }
 
 variable "cluster_name" {
   description = "name of cluster"
   type        = string
+  name = "github-testing"
 }
 
 variable "capacity_providers" {
@@ -38,4 +39,5 @@ variable "container_insights" {
 variable "family"{
   type = string
   description = ""
+  name = "github-testing-family"
 }
