@@ -1,6 +1,6 @@
-provider "aws" {
-  region = "ap-southeast-2"
-}
+# provider "aws" {
+#   region = "ap-southeast-2"
+# }
 
 resource "aws_ecs_cluster" "this" {
   count              = var.create_ecs ? 1 : 0
