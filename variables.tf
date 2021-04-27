@@ -31,7 +31,7 @@ variable "tags" {
 variable "container_insights" {
   description = "Controls if ECS Cluster has container insights enabled"
   type        = bool
-  default     = false
+  default     = true
 }
 
 // ecs task_definition variables
